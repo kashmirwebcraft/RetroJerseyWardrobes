@@ -430,8 +430,8 @@ a.back-to-top:hover, a.back-to-top:focus{
 .navbar-light .navbar-nav .nav-link{
     color: #333333;
 	text-transform: uppercase;
-	font-weight: 600;
-    font-size: 15px;
+	font-weight: 500;
+    font-size: 12px;
     padding: 0 15px;
 }
 .dark_bg_menu .navbar-nav .nav-link{
