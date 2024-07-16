@@ -408,113 +408,148 @@ a.back-to-top:hover, a.back-to-top:focus{
 /* ==========================================================================
 02. Start Header Area
 ========================================================================== */
-.navbar{
-    padding: 10px 0;
+.navbar {
+  padding: 10px 0;
 }
-.navbar-brand p{
-    font-size: 22px;
-	text-transform: uppercase;
-    color: #08d665;
-    font-weight: 700;
+
+.navbar-brand p {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #08d665;
+  font-weight: 700;
 }
-.bg-faded{
-	background-color: transparent;
-	transition: all 0.3s ease 0s;
+
+.bg-faded {
+  background-color: transparent;
+  transition: all 0.3s ease 0s;
 }
-@media only screen and (max-width:768px){ 
-	.bg-faded {
-		background: #fff;
-		animation: fadeInDown 1s both 0.2s;
-	}
+
+@media only screen and (max-width: 768px) { 
+  .bg-faded {
+    background: #ffffffb7;
+    animation: fadeInDown 1s both 0.2s;
+  }
+  
+  .navbar-nav {
+    display: none;
+  }
 }
-.navbar-light .navbar-nav .nav-link{
-    color: #333333;
-	text-transform: uppercase;
-	font-weight: 500;
-    font-size: 12px;
-    padding: 0 15px;
+
+@media only screen and (max-width: 480px) {
+  .navbar-toggler {
+    display: none;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    padding: 8px 0px;
+  }
 }
-.dark_bg_menu .navbar-nav .nav-link{
-	color: #fff;
+
+.navbar-light .navbar-nav .nav-link {
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 0 15px;
 }
-@media only screen and (max-width:768px){ 
-.navbar-light .navbar-nav .nav-link {color: #333;}
-}
-@media only screen and (max-width:480px) { 
-.navbar-light .navbar-nav .nav-link {padding: 8px 0px;}
-}
+
 .navbar-light .navbar-nav .nav-link:focus,
-.navbar-light .navbar-nav .nav-link:hover{
-	color: #08d665 !important;
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #08d665 !important;
 }
+
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.open,
-.navbar-light .navbar-nav .open > .nav-link{
-	color: #08d665  !important;
+.navbar-light .navbar-nav .open > .nav-link {
+  color: #08d665 !important;
 }
-.navbar-light .navbar-toggler{
-	border-color: #fff;
-	border-radius: 0px;
+
+.navbar-light .navbar-toggler {
+  border-color: #fff;
+  border-radius: 0px;
 }
-.navbar-light .navbar-toggler{
-	float: right;
-	margin: 14px;
-	cursor: pointer;
-    background-color: #08d665;
-	border-color: #08d665;
-	border-radius: 0;
+
+.navbar-light .navbar-toggler {
+  float: right;
+  margin: 14px;
+  cursor: pointer;
+  background-color: #08d665;
+  border-color: #08d665;
+  border-radius: 0;
 }
-.navbar-light .navbar-toggler-icon{
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox=\'0 0 32 32\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath stroke=\'rgba(0, 0, 0, 0.5)\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' d=\'M4 8h24M4 16h24M4 24h24\'/%3E%3C/svg%3E");
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-.navbar-light .navbar-toggler i{
-	color: #333!important;
+
+.navbar-light .navbar-toggler i {
+  color: #333 !important;
 }
-.site-navigation{
-    border-radius: 0px;
+
+.site-navigation {
+  border-radius: 0px;
 }
-@media only screen and (max-width:480px){ 
-	.collapse.show{
-		display: block;
-		padding: 0!important;
-	}
+
+@media only screen and (max-width: 480px) { 
+  .collapse.show {
+    display: block;
+    padding: 0 !important;
+  }
 }
-.navbar-fixed{
-    z-index: 99999;
-    position: fixed;
-    width: 100%;
-	padding:20px 0;
-    top: 0;
-    -webkit-animation: fadeInDown 800ms;
-    animation: fadeInDown 800ms;
-    -webkit-backface-visibility: hidden;
-    border-radius: 0px;
-    background-color: #E0E5EC;
-	box-shadow:0 10px 40px rgba(0, 0, 0, 0.05);
+
+.navbar-fixed {
+  z-index: 99999;
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  top: 0;
+  -webkit-animation: fadeInDown 800ms;
+  animation: fadeInDown 800ms;
+  -webkit-backface-visibility: hidden;
+  border-radius: 0px;
+  background-color: #E0E5EC;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
 }
-.dark_bg_menu{
-	z-index: 99999;
-    position: fixed;
-    width: 100%;
-	padding:20px 0;
-    top: 0;
-    -webkit-animation: fadeInDown 800ms;
-    animation: fadeInDown 800ms;
-    -webkit-backface-visibility: hidden;
-    border-radius: 0px;
-    background-color: #000;
-	box-shadow:0 10px 40px rgba(0, 0, 0, 0.05);
+
+.dark_bg_menu {
+  z-index: 99999;
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  top: 0;
+  -webkit-animation: fadeInDown 800ms;
+  animation: fadeInDown 800ms;
+  -webkit-backface-visibility: hidden;
+  border-radius: 0px;
+  background-color: #000;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
 }
-@media only screen and (max-width:768px){ 
-	.navbar-fixed {background:#fff;}
-	.navbar-fixed.navbar-light .navbar-nav .nav-link{color:#333;}
+
+@media only screen and (max-width: 768px) { 
+  .navbar-fixed {
+    background: #fff;
+  }
+  
+  .navbar-fixed.navbar-light .navbar-nav .nav-link {
+    color: #333;
+  }
 }
-.navbar-fixed.navbar-light .navbar-nav .nav-link{color:#333333;}
-.navbar-fixed.dark_bg_menu .navbar-nav .nav-link{color:#fff;}
-@media only screen and (max-width:768px){ 
-.navbar-fixed.navbar-light .navbar-nav .nav-link{color:#333;}
+
+.navbar-fixed.navbar-light .navbar-nav .nav-link {
+  color: #333333;
 }
+
+.navbar-fixed.dark_bg_menu .navbar-nav .nav-link {
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) { 
+  .navbar-fixed.navbar-light .navbar-nav .nav-link {
+    color: #333;
+  }
+}
+
 /* ==========================================================================
 02. End Header Area
 ========================================================================== */
