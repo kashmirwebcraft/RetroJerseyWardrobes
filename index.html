@@ -337,7 +337,53 @@
 			</div>   
 		</section>
 		<!-- Contact Section End -->
+<style>
+   /* styles.css */
 
+.call-us-button {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom of the screen */
+    right: 20px;  /* Distance from the right side of the screen */
+    background-color: #28a745; /* Button background color */
+    color: white; /* Button text color */
+    padding: 15px 20px; /* Button padding */
+    border-radius: 50px; /* Rounded corners */
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    font-size: 16px; /* Font size */
+    z-index: 1000; /* Ensure it is on top of other elements */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.call-us-button:hover {
+    background-color: #218838; /* Darker shade on hover */
+}
+
+   </style>
+</head>
+<body>
+    <!-- Your website content -->
+
+    <!-- Floating Call Us Button -->
+    <a href="tel:+919149831346" class="call-us-button">Call Us</a>
+
+    <script>
+        // script.js
+
+document.addEventListener("DOMContentLoaded", function() {
+    const callUsButton = document.querySelector(".call-us-button");
+
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 200) { // Show button after scrolling 200px
+            callUsButton.style.display = "block";
+        } else {
+            callUsButton.style.display = "none";
+        }
+    });
+});
+
+    </script>
 		<!-- Footer Section Start -->
 			<footer class="footer-area">
 				<div class="container">
